@@ -13,4 +13,4 @@ const PORT = process.env.PORT || 4111;
 
 app.listen(PORT, console.log("Server in port: " + PORT));
 
-export default app;
+export { app };
