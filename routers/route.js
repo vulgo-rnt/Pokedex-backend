@@ -3,6 +3,7 @@ import { Controller } from "../controllers/Controller.js";
 
 const routers = express.Router();
 
+routers.get("/", (req, res) => res.send("Hello"));
 routers.get("/type/:type/:pag", Controller.sendType);
 routers.get("/region/:region/:pag", Controller.sendRegion);
 routers.get("/pokemon/:name", Controller.sendOne);
